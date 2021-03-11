@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul > li {
+  list-style: none;
+}
+
+section {
+  width: 100%;
+  margin: auto;
+}
+
+
+/* swiper slider */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* perfume */
+.perfume__choice {
+  margin-top: 32px;
+  background: rgba(14, 14, 14, 0.81);
+  width: 100%;
+}
+
+.perfume__wrapper {
+  padding: 92px 80px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.perfume img {
+  position	: relative;
+}
+
+.perfume__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.04em;
+
+  position: absolute;
+  top: 1358px;
+}
+
+.text_w {
+  margin: 0 95px 27px 64px;
+}
+
+.text_m {
+  margin: 0 176px 27px 64px;
+}
+
+
+.perfume__text a {
+  color: #000000;
+}
+
+/* Coco Chanel */
+.wrapper__brend {
+  min-width: 320px;
+  max-width: 767px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+  padding-bottom: 71px;
+}
+
+.brend__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.brend__block {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.brend__img {
+  min-width: 387px;
+  height: 485px;
+  margin-right: 70px;
+}
+
+.brend__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  text-align: left
+}
+
+/* service */
+.wrapper__service {
+  background-color: #111025;
+  background-image: url("../img/image 63.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 768px;
+  left: -69px;
+}
+
+.wrapper__service div {
+  color: white;
+  text-align: center;
+  margin-bottom: 66px;
+}
+
+.service__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.service__btn {
+  margin-top: 56px;
+  display: block;
+  padding: 16px 31px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: 3px solid white;
+  coutline: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.service__btn:hover {
+  text-decoration: underline white;
+}
+
+/* bestsellers */
+.bestsellers {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.wrapper__bestsellers {
+  display: grid;
+  height: 900px;
+  padding-left: 25px;
+  margin-bottom: 80px;
+  grid-template-columns: .5fr 1fr .5fr;
+}
+
+.best__title {
+  margin: 0 0 5px;
+  width: 123px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.best__text {
+  margin: 0 0 5px;
+  font-style: normal;
+  text-transform: uppercase;
+  width: 123px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.left__block {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left__block img {
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 400px;
+  height: 400px;
+}
+
+.main__block {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 2;
+  grid-row-end: 1;
+}
+
+.main__block h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main__block img {
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 40px;
+  width: 600px;
+  height: 800px;
+}
+
+.right__block {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right__block img {
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 400px;
+  height: 400px;
+}
+
+.bestsellers__btn {
+  display: block;
+  padding: 16px 31px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: 1px solid black;
+  coutline: none;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 15px;
+  text-align: center;
+  color: black;
+  width: 210px;
+  height: 44px;
+}
+
+.bestsellers__btn:hover {
+  text-decoration: underline black;
+}

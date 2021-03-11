@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul > li {
+  list-style: none;
+}
+
+/* header */
+.wrapper {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 70px;
+  padding: 0 80px;
+  line-height: 35px;
+  color: white;
+  background: white;
+}
+
+.logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../img/logo_chanel.svg');
+  width: 73px;
+  height: 41px;
+}
+
+.nav__list {
+  list-style: none;
+  color: black;
+}
+
+.list__item {
+  display: inline-block;
+  margin-right: 30px;
+
+}
+
+.like:hover path {
+  fill: #FF0C0C;
+}
+
+.item__link {
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  background-repeat: no-repeat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+}
+
+.item__link:hover {
+  text-decoration: underline black;
+}
+
+/* mailing */
+.sendUs {
+  width: 100%;
+  height: 222px;
+  padding: 66px 0;
+  background-color: #FFF1EE;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sendUs p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.btn__send {
+  width: 210px;
+  height: 50px;
+  background: #681414;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.btn__send:hover {
+  background: #801e1e;
+}
+
+.failed__input {
+  width: 400px;
+  height: 50px;
+  background: #FFFFFF;
+  border: none;
+  color: rgba(111, 119, 143, 0.6);
+  padding: 0 16px;
+}
+
+/* footer */
+.footer__wrapper {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background: #1B1D21;
+  color: white;
+  font-size: 24px;
+  cursor: default;
+}
+
+.site__menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 62px 99px;
+}
+
+.logo__chanel {
+  width: 112px;
+  height: 29px;
+  background-image: url("../img/CHANEL.svg");
+  background-size: initial;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+b {
+  margin-bottom: 25px;
+  display: block;
+}
+
+.site-menu__link {
+  color: #FFFFFF;
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+}
+
+.site-menu__link:hover {
+  text-decoration: underline white;
+}
+
+.massMedia {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fab {
+  color: #FFFFFF;
+  content: '\f17b';
+  width: 100px;
+  height: 100px;
+}
+
+hr {
+  color: rgba(255, 255, 255, 0.55);
+  width: 1240px;
+}
+
+.descrsqw {
+  font-size: 12px;
+  padding-bottom: 32px;
+}
+
+.descrsqw a {
+  text-decoration: none;
+  color: #FFFFFF;
+}

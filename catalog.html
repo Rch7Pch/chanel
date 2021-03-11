@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalog</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/headerAndFooter.css">
+  <link rel="stylesheet" href="css/catalog.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/catalog.js"></script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="wrapper">
+    <a href='./index.html'><div class='logo'></div></a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="list__item"><a href="catalog.html?male=women" class="item__link">Женщины</a></li>
+        <li class="list__item"><a href="catalog.html?male=men" class="item__link">Мужчины</a></li>
+        <li class="list__item"><a href="index.html#news"  class="item__link">Новинки</a></li>
+        <li class="list__item"><a href="index.html#about" class="item__link">О нас</a></li>
+        <li class="list__item"><a href="#contact" class="item__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="nav__list">
+      <li class='list__item search'><a href="#" class="item__link">
+        <img src="img/icon/search.svg" alt="search">
+      </a></li>
+      <li class='list__item like'><a href="#" class="item__link">
+        <img src="img/icon/heart.svg" alt="heart">
+      </a></li>
+      <li class='list__item user'><a href="#" class="item__link">
+        <img src="img/icon/user.svg" alt="user">
+      </a></li>
+      <li class='list__item carts'><a href="#" class="item__link">
+        <img src="img/icon/bag.svg" alt="bag">
+      </a></li>
+    </ul>
+  </div>
+</header>
+
+  <section class="menu">
+    <div class="wrapper__menu">
+      <h1 class="menu__title">Женская коллекция</h1>
+      <span class="menu__contents">Главная / Женщины / Парфюмерия</span>
+      <hr>
+      <div class="categories">
+        <div class="child_category fr">Франшиза
+          <img src="img/arrow.svg" alt="arrow">
+          <form action="#" class="franchise"></form>
+        </div>
+        <div class="child_category ct">Категория
+          <img src="img/arrow.svg" alt="arrow">
+          <form action="#" class="categori"></form>
+        </div>
+        <div class="child_category fam">Семейство ароматов
+          <img src="img/arrow.svg" alt="arrow">
+          <form action="#" class="family"></form>
+        </div>
+        <div class="clearAll">Очистить все
+        </div>
+      </div>
+      <hr>
+      <div class="filter">
+        <div class="sorting">
+          <span>Сортировать по:</span>
+          <span>популярности</span>
+          <span>новизне</span>
+          <span>цене
+            <img src="img/down-arrow.svg" alt="down-arrow">
+            <img src="img/up-arrow.svg" alt="up-arrow">
+          </span>
+        </div>
+        <span>129 товара</span>
+        <div class="view">
+          <span>Показать:</span>
+          <span>9</span>
+          <span>18</span>
+          <span>36</span>
+          <span>Все</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="wrapper__products">
+      <div class="cards" id="items"></div>
+    </div>
+  </section>
+
+<section class="mailing">
+  <div class='sendUs'>
+    <p>Подпишись на рассылку, чтобы всегда быть в курсе всех новинок!</p>
+    <form>
+      <label>
+        <input type='email' placeholder='E-mail' class="failed__input" name="email" multiple>
+      </label>
+      <button type='submit' class="btn__send">Отправить</button>
+    </form>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer__wrapper">
+    <nav class='site__menu'>
+      <ul class="site-menu__list">
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link"><b>Каталог</b></a></li>
+        <li class="site-menu__item">
+          <a href="catalog.html?male=women" class="site-menu__link">Женщины</a></li>
+        <li class="site-menu__item">
+          <a href="catalog.html?male=men" class="site-menu__link">Мужчины</a></li>
+        <li class="site-menu__item">
+          <a href="index.html#news" class="site-menu__link">Новинки</a></li>
+      </ul>
+      <ul class="site-menu__list">
+        <li class="site-menu__item">
+          <a href="index.html#about" class="site-menu__link"><b>О нас</b></a></li>
+        <li class="site-menu__item">
+          <a href="index.html#about" class="site-menu__link">О бренде</a></li>
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link">Вакансии</a></li>
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link">Партнерам</a></li>
+      </ul>
+      <ul class="site-menu__list">
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link"><b>Контакты</b></a></li>
+        <li class="site-menu__item">
+          <a href="mailto:Chshop@gmail.com" class="site-menu__link">Chshop@gmail.com</a></li>
+      </ul>
+      <ul class="site-menu__list">
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link"><b>Адрес</b></a></li>
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link">Смотреть на карте</a></li>
+      </ul>
+
+      <div class='logo__chanel'></div>
+    </nav>
+
+    <div class='massMedia'>
+      <a href="https://www.instagram.com/chanelofficial/?hl=ru"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/chanel"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/chanelru/?brand_redir=10109514234"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <hr/>
+    <p class='descrsqw'>© 2020 Chanel · <a href="#">Правовая информация</a> · <a href="#">Файлы куки</a> · <a href="#">Политика конфиденциальности</a> · <a href="#">Отписаться от рассылки новостей</a></p>
+  </div>
+</footer>
+</body>
+</html>
