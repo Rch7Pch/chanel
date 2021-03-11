@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title id=""></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/headerAndFooter.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/catalog.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="js/cookie.js"></script>
+  <script src="js/product.js"></script>
+
+
+</head>
+
+<body>
+<header>
+  <div class="wrapper">
+    <a href='./index.html'><div class='logo'></div></a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="list__item"><a href="catalog.html?male=women" class="item__link">Женщины</a></li>
+        <li class="list__item"><a href="catalog.html?male=men" class="item__link">Мужчины</a></li>
+        <li class="list__item"><a href="index.html#news"  class="item__link">Новинки</a></li>
+        <li class="list__item"><a href="index.html#about" class="item__link">О нас</a></li>
+        <li class="list__item"><a href="#contact" class="item__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="nav__list">
+      <li class='list__item search'><a href="#" class="item__link">
+        <img src="img/icon/search.svg" alt="search">
+      </a></li>
+      <li class='list__item like'><a href="#" class="item__link">
+        <img src="img/icon/heart.svg" alt="heart">
+      </a></li>
+      <li class='list__item user'><a href="#" class="item__link">
+        <img src="img/icon/user.svg" alt="user">
+      </a></li>
+      <li class='list__item carts'><a href="#" class="item__link">
+        <img src="img/icon/bag.svg" alt="bag">
+      </a></li>
+    </ul>
+  </div>
+</header>
+
+  <section class="card__product">
+    <div class="card__wrapper">
+      <span class="subtitle">
+        <a href="catalog.html" class="subtitle__arrow" target="_self"><img src="img/left-arrow.svg" alt="button left arrow"></a>
+        <a href="catalog.html" class="subtitle__text" target="_self">Парфюмерия</a>
+      </span>
+        <div class="product" id="item"></div>
+    </div>
+  </section>
+
+  <section class="more_products">
+    <div class="swiper-container">
+      <h1>Eще больше любимых продуктов</h1>
+      <div class="swiper-wrapper">
+      </div>
+    </div>
+  </section>
+
+<section class="recent_products">
+  <div class="swiper-container">
+    <h1>Недавно просмотренные</h1>
+    <div class="products__wrapper swiper-wrapper recent">
+    </div>
+  </div>
+</section>
+
+<section class="mailing">
+  <div class='sendUs'>
+    <p>Подпишись на рассылку, чтобы всегда быть в курсе всех новинок!</p>
+    <form>
+      <label>
+        <input type='email' placeholder='E-mail' class="failed__input" name="email" multiple>
+      </label>
+      <button type='submit' class="btn__send">Отправить</button>
+    </form>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer__wrapper">
+    <nav class='site__menu'>
+      <ul class="site-menu__list">
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link"><b>Каталог</b></a></li>
+        <li class="site-menu__item">
+          <a href="catalog.html?male=women" class="site-menu__link" target="_self">Женщины</a></li>
+        <li class="site-menu__item">
+          <a href="catalog.html?male=men" class="site-menu__link" target="_self">Мужчины</a></li>
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link" target="_self">Новинки</a></li>
+      </ul>
+      <ul class="site-menu__list">
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link" target="_self"><b>О нас</b></a></li>
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link" target="_self">О бренде</a></li>
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link">Вакансии</a></li>
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link">Партнерам</a></li>
+      </ul>
+      <ul class="site-menu__list">
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link" target="_self"><b>Контакты</b></a></li>
+        <li class="site-menu__item">
+          <a href="mailto:Chshop@gmail.com" class="site-menu__link">Chshop@gmail.com</a></li>
+      </ul>
+      <ul class="site-menu__list">
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link" target="_self"><b>Адрес</b></a></li>
+        <li class="site-menu__item">
+          <a href="#" class="site-menu__link" target="_self">Смотреть на карте</a></li>
+      </ul>
+
+      <div class='logo__chanel'><a href="index.html" target="_self"></a></div>
+    </nav>
+
+    <div class='massMedia'>
+      <a href="https://www.instagram.com/chanelofficial/?hl=ru"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/chanel"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/chanelru/?brand_redir=10109514234"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <hr/>
+    <p class='descrsqw'>© 2020 Chanel · <a href="#">Правовая информация</a> · <a href="#">Файлы куки</a> · <a href="#">Политика конфиденциальности</a> · <a href="#">Отписаться от рассылки новостей</a></p>
+  </div>
+</footer>
+</body>
+</html>
