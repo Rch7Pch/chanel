@@ -1,2 +1,2 @@
 # chanel
-## rch7pch.github.io/chanel/
+ rch7pch.github.io/chanel/
